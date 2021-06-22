@@ -7,7 +7,7 @@ pre-installed. Each image has a specific GCC version. The images are based on
 
 Repository link: https://github.com/akospasztor/docker-gcc-arm
 
-Docker HUB link: https://hub.docker.com/r/akospasztor/docker-gcc-arm
+Docker Hub link: https://hub.docker.com/r/akospasztor/docker-gcc-arm
 
 [![Docker Image CI](https://github.com/akospasztor/docker-gcc-arm/actions/workflows/ci-docker-image.yml/badge.svg)](https://github.com/akospasztor/docker-gcc-arm/actions/workflows/ci-docker-image.yml)
 
