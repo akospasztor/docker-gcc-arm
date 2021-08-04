@@ -4,7 +4,7 @@ FROM akospasztor/docker-python:3.7-linux-1.0.0
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Install required packages
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get -y -q --no-install-recommends install \
     clang-format-11 \
     doxygen \
     make \
