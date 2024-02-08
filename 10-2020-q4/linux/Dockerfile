@@ -1,4 +1,4 @@
-FROM akospasztor/docker-python:3.7-linux-1.0.1
+FROM akospasztor/docker-python:3.11-linux-2.0.0
 
 # Suppress user dialogs (and selects the default answer) during apt-get install
 ARG DEBIAN_FRONTEND=noninteractive
