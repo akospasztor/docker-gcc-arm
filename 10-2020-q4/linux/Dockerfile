@@ -13,11 +13,10 @@ RUN apt-get update && apt-get -y -q --no-install-recommends install \
 
 # Install GCC for ARM
 ENV GCC_VERSION=10-2020-q4
-ENV GCC_DIR=$HOME/gcc/$GCC_VERSION
+ENV GCC_URL=https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
+RUN wget --progress=dot:mega -O /tmp/$GCC_VERSION.tar.bz2 $GCC_URL
 
-RUN wget --progress=dot:mega -O /tmp/$GCC_VERSION.tar.bz2 \
-    https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2
-
+ENV GCC_DIR=/opt/gcc/$GCC_VERSION
 RUN mkdir -p $GCC_DIR
 RUN tar xjf /tmp/$GCC_VERSION.tar.bz2 -C $GCC_DIR --strip-components=1
 RUN rm -f /tmp/$GCC_VERSION.tar.bz2

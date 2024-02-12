@@ -13,11 +13,10 @@ RUN apt-get update && apt-get -y -q --no-install-recommends install \
 
 # Install GCC for ARM
 ENV GCC_VERSION=8-2019-q3
-ENV GCC_DIR=$HOME/gcc/$GCC_VERSION
+ENV GCC_URL=https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2
+RUN wget --progress=dot:mega -O /tmp/$GCC_VERSION.tar.bz2 $GCC_URL
 
-RUN wget --progress=dot:mega -O /tmp/$GCC_VERSION.tar.bz2 \
-    https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2019q3/RC1.1/gcc-arm-none-eabi-8-2019-q3-update-linux.tar.bz2
-
+ENV GCC_DIR=/opt/gcc/$GCC_VERSION
 RUN mkdir -p $GCC_DIR
 RUN tar xjf /tmp/$GCC_VERSION.tar.bz2 -C $GCC_DIR --strip-components=1
 RUN rm -f /tmp/$GCC_VERSION.tar.bz2
