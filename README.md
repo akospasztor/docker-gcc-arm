@@ -13,10 +13,16 @@ Docker Hub link: https://hub.docker.com/r/akospasztor/docker-gcc-arm
 
 ## Usage
 
-Build image with gcc version 8-2019-q3 for linux:
+Build image with gcc version 10-2020-q4 for linux:
 
 ```bash
-docker build -t akospasztor/docker-gcc-arm:8-2019-q3-linux 8-2019-q3/linux/
+docker build -t akospasztor/docker-gcc-arm:10-2020-q4-linux-latest 10-2020-q4/linux/
+```
+
+Manually run container and mount a project folder:
+
+```bash
+docker run --rm -it -v <path-to-project-folder>:/app akospasztor/docker-gcc-arm:10-2020-q4-linux-latest
 ```
 
 Manually push all tags to Docker Hub:
