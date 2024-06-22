@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.1.0 (2024-06-22)
+
+- Add CMake version 3.29.6
+- Add Ninja version 1.12.1
+- Add unizp to the install list
+
+Available images:
+
+| Image:     | Architecture | Base image                                 |
+| ---------- | ------------ | ------------------------------------------ |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+
 ## 2.0.0 (2024-02-12)
 
 - Upgrade base images to akospasztor/docker-python:3.11-linux-2.0.0
