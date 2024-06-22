@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y -q --no-install-recommends install \
     clang-format-11 \
     doxygen \
     make \
+    unzip \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
