@@ -11,12 +11,12 @@
 
 Available images:
 
-| Image:     | Architecture | Base image                    |
-| ---------- | ------------ | ----------------------------- |
-| 8-2019-q3  | linux        | akospasztor/docker-python:3.7 |
-| 9-2019-q4  | linux        | akospasztor/docker-python:3.7 |
-| 9-2020-q2  | linux        | akospasztor/docker-python:3.7 |
-| 10-2020-q4 | linux        | akospasztor/docker-python:3.7 |
+| Image:     | Architecture | Base image                                 |
+| ---------- | ------------ | ------------------------------------------ |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.11-linux-2.0.0 |
 
 ## 1.0.2 (2021-08-04)
 
@@ -25,12 +25,12 @@ Available images:
 
 Available images:
 
-| Image:     | Architecture | Base image                    |
-| ---------- | ------------ | ----------------------------- |
-| 8-2019-q3  | linux        | akospasztor/docker-python:3.7 |
-| 9-2019-q4  | linux        | akospasztor/docker-python:3.7 |
-| 9-2020-q2  | linux        | akospasztor/docker-python:3.7 |
-| 10-2020-q4 | linux        | akospasztor/docker-python:3.7 |
+| Image:     | Architecture | Base image                                |
+| ---------- | ------------ | ----------------------------------------- |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.7-linux-1.0.1 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.7-linux-1.0.1 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.7-linux-1.0.1 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.7-linux-1.0.1 |
 
 ## 1.0.1 (2021-06-25)
 
@@ -38,12 +38,12 @@ Available images:
 
 Available images:
 
-| Image:     | Architecture | Base image                    |
-| ---------- | ------------ | ----------------------------- |
-| 8-2019-q3  | linux        | akospasztor/docker-python:3.7 |
-| 9-2019-q4  | linux        | akospasztor/docker-python:3.7 |
-| 9-2020-q2  | linux        | akospasztor/docker-python:3.7 |
-| 10-2020-q4 | linux        | akospasztor/docker-python:3.7 |
+| Image:     | Architecture | Base image                                |
+| ---------- | ------------ | ----------------------------------------- |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
 
 ## 1.0.0 (2021-06-22)
 
@@ -51,9 +51,9 @@ Available images:
 
 Available images:
 
-| Image:     | Architecture | Base image                    |
-| ---------- | ------------ | ----------------------------- |
-| 8-2019-q3  | linux        | akospasztor/docker-python:3.7 |
-| 9-2019-q4  | linux        | akospasztor/docker-python:3.7 |
-| 9-2020-q2  | linux        | akospasztor/docker-python:3.7 |
-| 10-2020-q4 | linux        | akospasztor/docker-python:3.7 |
+| Image:     | Architecture | Base image                                |
+| ---------- | ------------ | ----------------------------------------- |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.7-linux-1.0.0 |
