@@ -5,7 +5,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install required packages
 RUN apt-get update && apt-get -y -q --no-install-recommends install \
-    clang-format-11 \
+    clang-format \
+    clang-tidy \
     doxygen \
     make \
     unzip \
