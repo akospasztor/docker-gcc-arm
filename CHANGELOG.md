@@ -1,5 +1,20 @@
 # Changelog
 
+## 2.2.0 (2024-08-16)
+
+- Upgrade base images to akospasztor/docker-python:3.11-linux-2.0.1
+- Replace clang-format-11 with clang-format
+- Add clang-tidy
+
+Available images:
+
+| Image:     | Architecture | Base image                                 |
+| ---------- | ------------ | ------------------------------------------ |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+
 ## 2.1.0 (2024-06-22)
 
 - Add CMake version 3.29.6
