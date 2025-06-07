@@ -28,7 +28,8 @@ Available images:
 
 GCC for ARM version 10-2020-q4:
 
-- `10-2020-q4-linux-2.2.0`, `10-2020-q4-linux-latest`
+- `10-2020-q4-linux-2.3.0`, `10-2020-q4-linux-latest`
+- `10-2020-q4-linux-2.2.0`
 - `10-2020-q4-linux-2.1.0`
 - `10-2020-q4-linux-2.0.0`
 - `10-2020-q4-linux-1.0.2`
@@ -37,7 +38,8 @@ GCC for ARM version 10-2020-q4:
 
 GCC for ARM version 9-2020-q2:
 
-- `9-2020-q2-linux-2.2.0`, `9-2020-q2-linux-latest`
+- `9-2020-q2-linux-2.3.0`, `9-2020-q2-linux-latest`
+- `9-2020-q2-linux-2.2.0`
 - `9-2020-q2-linux-2.1.0`
 - `9-2020-q2-linux-2.0.0`
 - `9-2020-q2-linux-1.0.2`
@@ -46,7 +48,8 @@ GCC for ARM version 9-2020-q2:
 
 GCC for ARM version 9-2019-q4:
 
-- `9-2019-q4-linux-2.2.0`, `9-2019-q4-linux-latest`
+- `9-2019-q4-linux-2.3.0`, `9-2019-q4-linux-latest`
+- `9-2019-q4-linux-2.2.0`
 - `9-2019-q4-linux-2.1.0`
 - `9-2019-q4-linux-2.0.0`
 - `9-2019-q4-linux-1.0.2`
@@ -55,7 +58,8 @@ GCC for ARM version 9-2019-q4:
 
 GCC for ARM version 8-2019-q3:
 
-- `8-2019-q3-linux-2.2.0`, `8-2019-q3-linux-latest`
+- `8-2019-q3-linux-2.3.0`, `8-2019-q3-linux-latest`
+- `8-2019-q3-linux-2.2.0`
 - `8-2019-q3-linux-2.1.0`
 - `8-2019-q3-linux-2.0.0`
 - `8-2019-q3-linux-1.0.2`
