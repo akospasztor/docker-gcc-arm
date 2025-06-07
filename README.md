@@ -71,6 +71,7 @@ All latest images contain the following main software packages:
 | Clang-format                | latest available in apt |
 | Clang-tidy                  | latest available in apt |
 | CMake                       | 3.29.6                  |
+| Cppcheck                    | 2.17.1                  |
 | Doxygen                     | latest available in apt |
 | GCC for ARM (arm-none-eabi) | depends on the image    |
 | Make                        | latest available in apt |

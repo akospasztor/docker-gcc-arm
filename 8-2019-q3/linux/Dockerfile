@@ -4,10 +4,13 @@ FROM akospasztor/docker-python:3.11-linux-2.0.1
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Install required packages
+# Notes:
+# - libpcre3-dev is required for building cppcheck
 RUN apt-get update && apt-get -y -q --no-install-recommends install \
     clang-format \
     clang-tidy \
     doxygen \
+    libpcre3-dev \
     make \
     unzip \
     wget \
@@ -53,3 +56,18 @@ RUN unzip $NINJA_FILE -d $NINJA_DIR
 RUN rm -f $NINJA_FILE
 
 ENV PATH=$NINJA_DIR:$PATH
+
+# Install cppcheck
+# See: https://github.com/danmar/cppcheck?tab=readme-ov-file#gnu-make
+ARG CPPCHECK_VERSION=2.17.1
+ENV CPPCHECK_URL=https://github.com/danmar/cppcheck/archive/refs/tags/$CPPCHECK_VERSION.tar.gz
+ENV CPPCHECK_FILE=/tmp/cppcheck-$CPPCHECK_VERSION.tar.gz
+RUN wget --progress=dot:mega -O $CPPCHECK_FILE $CPPCHECK_URL
+
+RUN tar xzf $CPPCHECK_FILE -C /tmp
+RUN cd /tmp/cppcheck-$CPPCHECK_VERSION && \
+    make MATCHCOMPILER=yes FILESDIR=/usr/share/cppcheck HAVE_RULES=yes \
+    CXXFLAGS="-O2 -DNDEBUG -Wall -Wno-sign-compare -Wno-unused-function" \
+    install -j$(nproc)
+RUN rm -rf /tmp/cppcheck-$CPPCHECK_VERSION
+RUN rm -f $CPPCHECK_FILE
