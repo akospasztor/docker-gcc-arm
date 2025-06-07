@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.3.0 (2025-06-07)
+
+- Add cppcheck
+
+Available images:
+
+| Image:     | Architecture | Base image                                 |
+| ---------- | ------------ | ------------------------------------------ |
+| 8-2019-q3  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 9-2019-q4  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 9-2020-q2  | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+| 10-2020-q4 | linux        | akospasztor/docker-python:3.11-linux-2.0.1 |
+
 ## 2.2.0 (2024-08-16)
 
 - Upgrade base images to akospasztor/docker-python:3.11-linux-2.0.1
